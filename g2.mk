@@ -84,8 +84,6 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc_nci.g2 \
-    NfcNci \
     Tag \
     com.android.nfc_extras
 
@@ -110,8 +108,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.audio.handset.mic=digital \
-	persist.audio.fluence.mode=endfire \
+	persist.audio.fluence.voicecall=true \
+	persist.audio.dualmic.config=endfire \
 	af.resampler.quality=4
 
 
